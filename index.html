@@ -2,73 +2,135 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Swiper demo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>活动首页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="./css/swiper.min.css">
+    <!-- Link bootstrap's CSS -->
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Link bootstrap's JS -->
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- Demo styles -->
     <style>
-    .swiper-container {
-        width: 100%;
-        height:100px;
-        margin: 20px auto;
-        padding-left: 15px;
-    }
-    .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-    }
+        @font-face {
+            font-family: PingFangSC-Regular;
+            src: 'https://www.apple.com/wss/fonts/SF-Pro-SC/v1/PingFangSC-Regular.woff2';
+            /* font-family: PingFangSC-Semibold;
+            src: 'https://www.apple.com/wss/fonts/SF-Pro-SC/v1/PingFangSC-Semibold.woff2'; */
+        }
+        body {
+            margin: 0;
+        }
+        p {
+            margin-right: 15px;
+            margin-top: 10px;
+            font-family: PingFangSC-Regular;
+            font-size: 14px;
+        }
+        a:link {   
+            color: #000000;   
+            text-decoration: none;   
+            }   
+        a:visited {     
+            color: #000000;   
+            text-decoration: none;   
+            }   
+
+        .title {
+            margin-left: 15px;
+            margin-top: 15px;
+            font-family: PingFangSC-Regular;
+            font-size: 17px;
+        }
+        .two{
+            border-radius: 25px;
+        }
+        .swiper-container {
+            width: 100%;
+        }
+
+
     </style>
 </head>
 <body>
-        <!-- Swiper -->
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="http://placehold.it/200x200" width="200px"></div>
-                <div class="swiper-slide"><img src="http://placehold.it/200x200" width="200px"></div>
-                <div class="swiper-slide"><img src="http://placehold.it/200x200" width="200px"></div>
-                <div class="swiper-slide"><img src="http://placehold.it/200x200" width="200px"></div>
-                <div class="swiper-slide"><img src="http://placehold.it/200x200" width="200px"></div>
-                <div class="swiper-slide"><img src="http://placehold.it/200x200" width="200px"></div>
-                <div class="swiper-slide"><img src="http://placehold.it/200x200" width="200px"></div>
-                <div class="swiper-slide"><img src="http://placehold.it/200x200" width="200px"></div>
-                <div class="swiper-slide"><img src="http://placehold.it/200x200" width="200px"></div>
-                <div class="swiper-slide"><img src="http://placehold.it/200x200" width="200px"></div>
-            </div>
+    <div class="swiper-container swiper-container1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide one"><a href="https://mp.weixin.qq.com/s/-o4t4NZtdFxwvUGs4Btx1w"><img src="./images/banner.jpg" width="100%"></a></div>
+            <!-- <div class="swiper-slide two"><img src="./images/banner.jpg" width="100%"></div> -->
         </div>
-
+    </div>
+    <p class="title">更多活动</p>
+    <div class="swiper-container swiper-container5">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide one">
+                    <a href="https://mp.weixin.qq.com/s/dcEuaC-09TuRe2U15dUuWQ">
+                        <img src="./images/gd1.jpg" class="two" width=100px height=100px>
+                        <p>“相声新势力”十年磨一剑，卢鑫与玉浩笑傲大成都！</p>
+                    </a>
+                </div>
+                <div class="swiper-slide one">
+                    <a href="https://mp.weixin.qq.com/s/cJUa7R8vT8rnPmuNEIeocw">
+                        <img src="./images/gd2.jpg" class="two" width=100px height=100px>
+                        <p>致敬孩子们的天马行空，一起来“玩”剧！！</p>
+                    </a>
+                </div>
+                <div class="swiper-slide one">
+                    <a href="https://mp.weixin.qq.com/s/dWe9EWnIq_sSHSZQfQLnVA">
+                        <img src="./images/gd3.jpg" class="two" width=100px height=100px>
+                        <p>我就是爱音乐，别叫我停下来~ 这场电音节，尽情嗨！</p>
+                    </a>
+                </div>
+                <div class="swiper-slide one">
+                    <a href="http://mp.weixin.qq.com/s/e7SLdSBUiytQqE_GUnsS2A">
+                        <img src="./images/gd4.jpg" class="two" width=100px height=100px>
+                        <p>2017《国家地理》经典影像成都开展，大假不出门也能享视觉盛宴</p>
+                    </a>
+                </div>
+            </div>
+    </div>
+    <hr>
+    <div class="swiper-container swiper-container6">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide one"><img src="./images/huodong.png" width="90%"></div>
+            <div class="swiper-slide one"><img src="./images/yanchu.png" width="90%"></div>
+            <div class="swiper-slide one"><img src="./images/dianying.png" width="90%"></div>
+            <div class="swiper-slide one"><img src="./images/baoming.png" width="90%"></div>
+        </div>
+    </div>
+    <hr>
 
     <!-- Swiper JS -->
     <script src="./js/swiper.min.js"></script>
 
     <!-- Initialize Swiper -->
-    <script>
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        slidesPerView: 3.5,
-        paginationClickable: true,
-        spaceBetween: 20,
-        freeMode: true
-    });
+        <script>       
+            var mySwiper = new Swiper ('.swiper-container1', {
+            direction: 'horizontal',
+            loop: true,
+            speed: 1000,
+            autoplay: 4000,
+            slidesPerView:1,
+            })     
+            var mySwiper = new Swiper ('.swiper-container5', {
+            direction: 'horizontal',
+            // loop: true,
+            // speed: 1000,
+            // autoplay: 4000,
+            slidesPerView:3.2,
+            spaceBetween: -10,
+            slidesOffsetBefore : 15,
+            })   
+            var mySwiper = new Swiper ('.swiper-container6', {
+            direction: 'horizontal',
+            // loop: true,
+            // speed: 1000,
+            // autoplay: 4000,
+            slidesPerView:1.6,
+            spaceBetween: -10,
+            slidesOffsetBefore : 15,
+            })   
     </script>
 </body>
 </html>
