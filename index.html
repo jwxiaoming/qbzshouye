@@ -22,12 +22,30 @@
         }
         body {
             margin: 0;
+            overflow-y:hidden;
         }
         p {
-            margin-right: 15px;
+            margin-right: 30px;
             margin-top: 10px;
             font-family: PingFangSC-Regular;
             font-size: 14px;
+        }
+        small {
+            float: right;
+            margin-top: -30px;
+            margin-right: 10px;
+            font-family: PingFangSC-Regular;
+            font-size: 12px;
+            color: #000000;  
+        }
+        span {
+            background-image: url('./images/more.svg');
+            background-size: 10px 15px;
+            background-repeat: no-repeat;
+            width: 10px;
+            height: 15px;
+            display: inline-block;
+            vertical-align: sub;
         }
         a:link {   
             color: #000000;   
@@ -57,35 +75,67 @@
 <body>
     <div class="swiper-container swiper-container1">
         <div class="swiper-wrapper">
-            <div class="swiper-slide one"><a href="https://mp.weixin.qq.com/s/-o4t4NZtdFxwvUGs4Btx1w"><img src="./images/banner.jpg" width="100%"></a></div>
+            <div class="swiper-slide one"><a href="https://mp.weixin.qq.com/s/-o4t4NZtdFxwvUGs4Btx1w"><img src="./images/banner2.jpg" width="100%"></a></div>
             <!-- <div class="swiper-slide two"><img src="./images/banner.jpg" width="100%"></div> -->
         </div>
     </div>
+    <div>
+        <p class="title">新鲜活动 </p><small>显示全部<span></span></small>
+    </div>
+    <div class="swiper-container swiper-container4">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide one">
+                <a href="https://mp.weixin.qq.com/s?__biz=MTY3NTUwMDEwMQ==&mid=2651917499&idx=1&sn=e8002cdbeff1ed43eb9dfc6301a474e8&chksm=500441916773c887e6e84975e9d9225ff1ab608fcc12008c5173ee4d77791b3de3019a425008&mpshare=1&scene=21&srcid=09213jpjnsWA8Fih6V8JlIJV#wechat_redirect">
+                    <img src="./images/xx1.jpg" class="two" width=75%>
+                    <p>成都国际马拉松开跑啦</p>
+                </a>
+            </div>
+            <div class="swiper-slide one">
+                <a href="https://mp.weixin.qq.com/s?__biz=MjM5MDAzNjgwMA==&mid=2652620184&idx=1&sn=9f0f319ea734b004971c867d01c4d746&chksm=bda583b78ad20aa12edabe11c4c6806a4cc26c15c5cb96347c14200f03abbf359609ff22ff3b&mpshare=1&srcid=09133rgOxumc5b163ELkWugc&scene=21#wechat_redirect">
+                    <img src="./images/xx2.jpg" class="two" width=75%>
+                    <p>日落春浪电子音乐节</p>
+                </a>
+            </div>
+            <div class="swiper-slide one">
+                <a href="https://mp.weixin.qq.com/s?__biz=MjM5MDAzNjgwMA==&mid=2652619994&idx=4&sn=1f6b2aae5b8981c41cd122f1de259346&chksm=bda582f58ad20be393da3278340af7f631e41f120fea24e714a0a4b4a7f08d4551809744ca88&scene=21#wechat_redirect">
+                    <img src="./images/xx3.jpg" class="two" width=75%>
+                    <p>2017成都网球公开赛</p>
+                </a>
+            </div>
+            <div class="swiper-slide one">
+                <a href="https://mp.weixin.qq.com/s?__biz=MjM5NDY4Mzc5NA==&mid=2650597347&idx=1&sn=6e5f7dd4e9564fe01ffd09bc0b91026f&chksm=be8c491e89fbc008883a329ad80cce1b5579a06667b5135ce23acced76194782d9240bcbb3e6&mpshare=1&srcid=0921iRXWO8oykp5u0yjBWkMa&scene=21#wechat_redirect">
+                    <img src="./images/xx4.jpg" class="two" width=75%>
+                    <p>四川中秋食品博览会</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <hr>
     <p class="title">更多活动</p>
     <div class="swiper-container swiper-container5">
             <div class="swiper-wrapper">
                 <div class="swiper-slide one">
                     <a href="https://mp.weixin.qq.com/s/dcEuaC-09TuRe2U15dUuWQ">
-                        <img src="./images/gd1.jpg" class="two" width=100px height=100px>
-                        <p>“相声新势力”十年磨一剑，卢鑫与玉浩笑傲大成都！</p>
+                        <img src="./images/gd1.jpg" class="two" width=75%>
+                        <p>卢鑫与玉浩笑傲大成都</p>
                     </a>
                 </div>
                 <div class="swiper-slide one">
                     <a href="https://mp.weixin.qq.com/s/cJUa7R8vT8rnPmuNEIeocw">
-                        <img src="./images/gd2.jpg" class="two" width=100px height=100px>
-                        <p>致敬孩子们的天马行空，一起来“玩”剧！！</p>
+                        <img src="./images/gd2.jpg" class="two" width=75%>
+                        <p>致敬孩子们的天马行空...</p>
                     </a>
                 </div>
                 <div class="swiper-slide one">
                     <a href="https://mp.weixin.qq.com/s/dWe9EWnIq_sSHSZQfQLnVA">
-                        <img src="./images/gd3.jpg" class="two" width=100px height=100px>
-                        <p>我就是爱音乐，别叫我停下来~ 这场电音节，尽情嗨！</p>
+                        <img src="./images/gd3.jpg" class="two" width=75%>
+                        <p>我就是爱音乐别叫我停下...</p>
                     </a>
                 </div>
                 <div class="swiper-slide one">
                     <a href="http://mp.weixin.qq.com/s/e7SLdSBUiytQqE_GUnsS2A">
-                        <img src="./images/gd4.jpg" class="two" width=100px height=100px>
-                        <p>2017《国家地理》经典影像成都开展，大假不出门也能享视觉盛宴</p>
+                        <img src="./images/gd4.jpg" class="two" width=75%>
+                        <p>2017《国家地理》经典影...</p>
                     </a>
                 </div>
             </div>
@@ -110,16 +160,25 @@
             direction: 'horizontal',
             loop: true,
             speed: 1000,
-            autoplay: 4000,
+            // autoplay: 4000,
             slidesPerView:1,
-            })     
+            })    
+            var mySwiper = new Swiper ('.swiper-container4', {
+            direction: 'horizontal',
+            // loop: true,
+            // speed: 1000,
+            // autoplay: 4000,
+            slidesPerView:3.3,
+            spaceBetween: -15,
+            slidesOffsetBefore : 15,
+            })    
             var mySwiper = new Swiper ('.swiper-container5', {
             direction: 'horizontal',
             // loop: true,
             // speed: 1000,
             // autoplay: 4000,
-            slidesPerView:3.2,
-            spaceBetween: -10,
+            slidesPerView:3.3,
+            spaceBetween: -15,
             slidesOffsetBefore : 15,
             })   
             var mySwiper = new Swiper ('.swiper-container6', {
